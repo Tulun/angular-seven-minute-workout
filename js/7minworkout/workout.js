@@ -1,4 +1,4 @@
-angular.module('7minWorkout').controller('WorkoutController', ['$scope', function($scope){
+angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$interval', function($scope){
   
   function Exercise(args) {
     this.name = args.name;
@@ -56,6 +56,14 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', functio
     });
     // (TRUNCATED) Other 11 workout exercise data.
     return workout;
+  };
+
+  var startExercise = function (exercisePlan) {
+    $scope.currentExercise = exercisePlan;
+    $scope.currentExerciseDuration = 0;
+    $interval(function () {
+      ++$scope.currentExerciseDuration;
+    }, 1000, $scope.currentExercise.duration);
   };
 
   var init = function () {
