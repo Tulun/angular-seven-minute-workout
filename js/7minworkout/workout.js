@@ -1,4 +1,6 @@
-angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$interval', function($scope){
+'use strict';
+
+angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$interval', function($scope, $interval) {
   
   function Exercise(args) {
     this.name = args.name;
