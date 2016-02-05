@@ -22,7 +22,40 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', functio
   var workoutPlan;
 
   var startWorkout = function () {
+    workoutPlan = createWorkout();
+    restExercise = {
+      details: new Exercise({
+        name: "rest",
+        title: "Relax!",
+        description: "Relax a bit!",
+        image: "img/rest.png",
+      }),
 
+      duration: workoutPlan.restBetweenExercise
+    };
+    startExercise(workoutPlan.exercises.shift());
+  };
+
+  var createWorkout = function () {
+    var workout = new WorkoutPlan({
+      name: '7minWorkout',
+      title: '7 Minute Workout',
+      restBetweenExercise: 10
+    });
+
+    workout.exercises.push({
+      details: new Exercise({
+        name: 'jumpingJacks',
+        title: 'Jumping Jacks',
+        description: 'img/JumpingJacks.png',
+        videos: [],
+        variations: [],
+        procedure: ""
+      }),
+      duration: 30
+    });
+    // (TRUNCATED) Other 11 workout exercise data.
+    return workout;
   };
 
   var init = function () {
