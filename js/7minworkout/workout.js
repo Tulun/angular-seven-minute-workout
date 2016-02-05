@@ -50,6 +50,7 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
         name: 'jumpingJacks',
         title: 'Jumping Jacks',
         description: 'img/JumpingJacks.png',
+        image: 'img/JumpingJacks.png',
         videos: ["//www.youtube.com/embed/dmYwZH_BNd0", "//www.youtube.com/embed/BABOdJ-2Z6o", "//www.youtube.com/embed/c4DAnQ6DtF8"],
         variations: [],
         procedure: "Assume an erect position, with feet together and arms at your side.\
