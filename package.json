@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Tulun/angular-seven-minute-workout/issues"
   },
-  "homepage": "https://github.com/Tulun/angular-seven-minute-workout#readme"
+  "homepage": "https://github.com/Tulun/angular-seven-minute-workout#readme",
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "ng-annotate": "^1.2.1"
+  }
 }
