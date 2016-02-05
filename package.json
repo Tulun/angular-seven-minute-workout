@@ -1,0 +1,19 @@
+{
+  "name": "seven_minute_workout",
+  "version": "1.0.0",
+  "description": "Designing a little website that shows the '7-minute workout'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tulun/angular-seven-minute-workout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tulun/angular-seven-minute-workout/issues"
+  },
+  "homepage": "https://github.com/Tulun/angular-seven-minute-workout#readme"
+}
